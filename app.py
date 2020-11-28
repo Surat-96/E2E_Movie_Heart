@@ -6,7 +6,7 @@ from flask_mysqldb import MySQL
 import MySQLdb.cursors
 import re
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 #movie genre review model read
 filename = open('MovieReview/movie-genre-model.pkl', 'rb')
