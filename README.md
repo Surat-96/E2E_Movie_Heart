@@ -1,2 +1,4 @@
 # E2E_Movie_Heart
-It is a END 2 END ML PROJECTS with MOVIE GENRE &amp; HEART DISEASES PREDICTIONS
+It is an End 2 End ML Project with Machine
+Learning Algorithm (Naïve Bayes), Flask by Self Implement within 1 month.
+
