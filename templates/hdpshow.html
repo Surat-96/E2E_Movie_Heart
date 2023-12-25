@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="static/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="static/css/util.css">
-	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main1.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -38,7 +38,7 @@
                 <div class="wrap-input100 validate-input">
 					{% if prediction==1 %}
 				        <h1>{{name}}:<span class='danger'>Oops! You have Heart Diseases Problem.</span></h1>
-				        <h1> <span class='danger'> Heart Diseases Probality is {{proba}}%. Thank You</span></h1>
+				        <h1> <span class='danger'> Heart Diseases Probality is {{proba.round(4)}}%. Thank You</span></h1>
 				        <img class="gif" src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
 			        {% elif prediction==0 %}
 				        <h1>{{name}}:<span class='safe'>Great! You DON'T have Heart Diseases Problem.</span></h1>
